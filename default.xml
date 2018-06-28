@@ -12,7 +12,7 @@
 <project path="helm-charts" name="helm-charts" groups="build"/>
 <project path="automation-tools" name="automation-tools" groups="build"/>
 
-<project path="xos" name="xos" groups="core"/>
+<project path="xos" name="xos-core" groups="core"/>
 <project path="xos-gui" name="xos-gui" groups="core"/>
 <project path="xos-tosca" name="xos-tosca" groups="core"/>
 <project path="xos-sample-gui-extension" name="xos-sample-gui-extension" groups="core"/>
@@ -62,9 +62,9 @@
 <project path="profiles/ecord" name="ecord" groups="services,profiles"/>
 <project path="profiles/mcord" name="mcord" groups="services,profiles"/>
 
-<project path="component/chameleon" name="chameleon" groups="component">
-    <linkfile src="." dest="component/voltha/chameleon"/>
+<project path="components/chameleon" name="chameleon" groups="components">
+    <linkfile src="." dest="components/voltha/chameleon"/>
 </project>
-<project path="component/voltha" name="voltha" groups="component"/>
+<project path="components/voltha" name="voltha" groups="components"/>
 
 </manifest>
