@@ -12,7 +12,7 @@
 <project path="helm-charts" name="helm-charts" groups="build"/>
 <project path="automation-tools" name="automation-tools" groups="build"/>
 
-<project path="xos" name="xos-core" groups="core"/>
+<project path="xos-core" name="xos" groups="core"/>
 <project path="xos-gui" name="xos-gui" groups="core"/>
 <project path="xos-tosca" name="xos-tosca" groups="core"/>
 <project path="xos-sample-gui-extension" name="xos-sample-gui-extension" groups="core"/>
