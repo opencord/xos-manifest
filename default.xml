@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="opencord"
+           fetch=".."
+           review="https://gerrit.opencord.org/"
+           revision="master" />
+  <default revision="master"
+           remote="opencord"
+           sync-j="4" />
+
+<project path="helm-charts" name="helm-charts" groups="build"/>
+<project path="automation-tools" name="automation-tools" groups="build"/>
+
+<project path="xos" name="xos" groups="core"/>
+<project path="xos-gui" name="xos-gui" groups="core"/>
+<project path="xos-tosca" name="xos-tosca" groups="core"/>
+<project path="xos-sample-gui-extension" name="xos-sample-gui-extension" groups="core"/>
+<project path="xos-rest-gw" name="xos-rest-gw" groups="core"/>
+
+<project path="services/kubernetes-service" name="kubernetes-service" groups="services,platform"/>
+<project path="services/openstack" name="openstack" groups="services,platform"/>
+<project path="services/onos-service" name="onos-service" groups="services,platform"/>
+
+<project path="services/addressmanager" name="addressmanager" groups="services"/>
+<project path="services/templateservice" name="templateservice" groups="services"/>
+<project path="services/fabric" name="fabric" groups="services"/>
+<project path="services/hypercache" name="hypercache" groups="services"/>
+
+<project path="services/monitoring" name="monitoring" groups="services"/>
+<project path="services/vrouter" name="vrouter" groups="services"/>
+<project path="services/vsg" name="vsg" groups="services"/>
+<project path="services/vsg-hw" name="vsg-hw" groups="services"/>
+<project path="services/vtr" name="vtr" groups="services"/>
+<project path="services/globalxos" name="globalxos" groups="services"/>
+<project path="services/olt-service" name="olt-service" groups="services"/>
+<project path="services/vtn-service" name="vtn-service" groups="services"/>
+<project path="services/hippie-oss" name="hippie-oss" groups="services"/>
+<project path="services/vbbu" name="vBBU" groups="services"/>
+<project path="services/vmme" name="vMME" groups="services"/>
+<project path="services/vpgwc" name="vPGWC" groups="services"/>
+<project path="services/vsgw" name="vSGW" groups="services"/>
+<project path="services/progran" name="progran" groups="services"/>
+<project path="services/vhss" name="vHSS" groups="services"/>
+<project path="services/hss_db" name="hss_db" groups="services"/>
+<project path="services/vmm" name="vMM" groups="services"/>
+<project path="services/vsm" name="vSM" groups="services"/>
+<project path="services/venb" name="venb" groups="services"/>
+<project path="services/internetemulator" name="internetemulator" groups="services"/>
+<project path="services/sdn-controller" name="sdn-controller" groups="services"/>
+<project path="services/vspgwc" name="vspgwc" groups="services"/>
+<project path="services/vspgwu" name="vspgwu" groups="services"/>
+<project path="services/epc-service" name="epc-service" groups="services"/>
+<project path="services/vEE" name="vEE" groups="services"/>
+<project path="services/vEG" name="vEG" groups="services"/>
+<project path="services/vnaas" name="vnaas" groups="services"/>
+<project path="services/exampleservice" name="exampleservice" groups="services"/>
+<project path="services/simpleexampleservice" name="simpleexampleservice" groups="services"/>
+<project path="services/acordion" name="acordion" groups="services"/>
+
+<project path="profiles/rcord" name="rcord" groups="services,profiles"/>
+<project path="profiles/ecord" name="ecord" groups="services,profiles"/>
+<project path="profiles/mcord" name="mcord" groups="services,profiles"/>
+
+<project path="component/chameleon" name="chameleon" groups="component">
+    <linkfile src="." dest="component/voltha/chameleon"/>
+</project>
+<project path="component/voltha" name="voltha" groups="component"/>
+
+</manifest>
